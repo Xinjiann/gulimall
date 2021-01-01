@@ -1,20 +1,8 @@
----
-title: File upload ideas for distributed systems
-date: 2021-01-01 02:38:29
-tags: 
-  - Springboot
-  - Java Web
-category: Springboot project
-swiper: true
-swiperImg: '/images/about.jpg'
-top: True
----
-
 # File upload ideas for distributed systems
 
 In distributed system, services are deployed on different servers, an OSS(Object Stroage Service)is neccessary to avoid files in didferent servers that could not be found.
 
-![](/images/oss.jpg)
+![](https://github.com/Xinjiann/gulimall/blob/main/imgs/oss.png)
 
 
 Here we use the cloud OSS from Alibaba.
@@ -23,7 +11,7 @@ Here we use the cloud OSS from Alibaba.
 
 ### 1.1. Access Alibaba Cloud Oss - [Aliyun](https://cn.aliyun.com/)
 
-![](/images/oss1.png)
+![](https://github.com/Xinjiann/gulimall/blob/main/imgs/oss1.png)
 
 Simply following the instruction.
 
@@ -117,18 +105,18 @@ public class OssController {
 
 ### 1.5. Create Alibaba Cloud sub-users to access Alibaba Cloud OSS objects
 
-![](/images/oss2.png)
+![](https://github.com/Xinjiann/gulimall/blob/main/imgs/oss2.png)
 
 
-![](/images/0ss3.png)
+![](https://github.com/Xinjiann/gulimall/blob/main/imgs/0ss3.png)
 
 ### 1.6. Add authority 
 
-![](/images/oss4.png)
+![](https://github.com/Xinjiann/gulimall/blob/main/imgs/oss4.png)
 
 ### 1.7. Enable cross-domain access
 
-![](/images/oss5.png)
+![](https://github.com/Xinjiann/gulimall/blob/main/imgs/oss5.png)
 
 ## 2. Front end verification
 
