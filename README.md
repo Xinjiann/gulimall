@@ -1,6 +1,6 @@
 # gulimall
 
-Gulimall is a self-operated mall platform similar to JD, which consists of a business cluster system + a background management system.
+Gulimall is a self-operated mall platform, which consists of a cluster system + backend management system.
 
 This project covers the full-stack technology of distributed development, including front-and-back full-stack development, Restful interface, data verification, gateway, registration discovery, configuration center, fuse, current limit, downgrade,
 Link tracking, performance monitoring, stress testing, system warning, cluster deployment, continuous integration, continuous deployment.
