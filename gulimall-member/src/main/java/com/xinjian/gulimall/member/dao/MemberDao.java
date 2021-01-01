@@ -1,0 +1,17 @@
+package com.xinjian.gulimall.member.dao;
+
+import com.xinjian.gulimall.member.entity.MemberEntity;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Mapper;
+
+/**
+ * 会员
+ * 
+ * @author xinjianli
+ * @email 963597661@qq.com
+ * @date 2020-12-25 02:56:09
+ */
+@Mapper
+public interface MemberDao extends BaseMapper<MemberEntity> {
+	
+}
