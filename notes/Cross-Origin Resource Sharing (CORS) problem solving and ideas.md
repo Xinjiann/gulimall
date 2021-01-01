@@ -3,11 +3,11 @@
 Accessing the backend data with ip address successed, but failed when frontend do so, as shown below: 
 
 
-![](https://github.com/Xinjiann/java/blob/main/img/%E8%B7%A8%E5%9F%9F2.png)
+![](https://github.com/Xinjiann/gulimall/blob/main/imgs/%E8%B7%A8%E5%9F%9F2.png)
 
 Its due to the browser restrictions on javascript's same-origin policy. Senarios below are the cross-domain examples.
 
-![](https://github.com/Xinjiann/java/blob/main/img/%E8%B7%A8%E5%9F%9F.png)
+![](https://github.com/Xinjiann/gulimall/blob/main/imgs/%E8%B7%A8%E5%9F%9F.png)
 
 ## Analysing
 
