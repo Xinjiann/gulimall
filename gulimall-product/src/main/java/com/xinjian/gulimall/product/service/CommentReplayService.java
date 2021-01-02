@@ -1,17 +1,17 @@
-package com.xinjian.gulimall.product.service;
+package com.firenay.mall.product.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.xinjian.common.utils.PageUtils;
-import com.xinjian.gulimall.product.entity.CommentReplayEntity;
+import com.firenay.common.utils.PageUtils;
+import com.firenay.mall.product.entity.CommentReplayEntity;
 
 import java.util.Map;
 
 /**
  * 商品评价回复关系
  *
- * @author xinjianli
- * @email 963597661@qq.com
- * @date 2020-12-24 15:01:42
+ * @author firenay
+ * @email 1046762075@qq.com
+ * @date 2020-05-31 17:06:04
  */
 public interface CommentReplayService extends IService<CommentReplayEntity> {
 

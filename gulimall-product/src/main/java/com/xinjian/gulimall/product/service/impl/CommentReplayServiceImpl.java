@@ -1,16 +1,16 @@
-package com.xinjian.gulimall.product.service.impl;
+package com.firenay.mall.product.service.impl;
 
 import org.springframework.stereotype.Service;
 import java.util.Map;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.xinjian.common.utils.PageUtils;
-import com.xinjian.common.utils.Query;
+import com.firenay.common.utils.PageUtils;
+import com.firenay.common.utils.Query;
 
-import com.xinjian.gulimall.product.dao.CommentReplayDao;
-import com.xinjian.gulimall.product.entity.CommentReplayEntity;
-import com.xinjian.gulimall.product.service.CommentReplayService;
+import com.firenay.mall.product.dao.CommentReplayDao;
+import com.firenay.mall.product.entity.CommentReplayEntity;
+import com.firenay.mall.product.service.CommentReplayService;
 
 
 @Service("commentReplayService")

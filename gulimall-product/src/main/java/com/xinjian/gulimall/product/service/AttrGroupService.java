@@ -1,20 +1,25 @@
-package com.xinjian.gulimall.product.service;
+package com.firenay.mall.product.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.xinjian.common.utils.PageUtils;
-import com.xinjian.gulimall.product.entity.AttrGroupEntity;
+import com.firenay.common.utils.PageUtils;
+import com.firenay.mall.product.entity.AttrGroupEntity;
+import com.firenay.mall.product.vo.AttrGroupWithAttrsVo;
 
+import java.util.List;
 import java.util.Map;
 
 /**
  * 属性分组
- *
- * @author xinjianli
- * @email 963597661@qq.com
- * @date 2020-12-24 15:01:44
+ * @author firenay
+ * @email 1046762075@qq.com
+ * @date 2020-05-31 17:06:04
  */
 public interface AttrGroupService extends IService<AttrGroupEntity> {
 
     PageUtils queryPage(Map<String, Object> params);
+
+	PageUtils queryPage(Map<String, Object> params, Long catelogId);
+
+	List<AttrGroupWithAttrsVo> getAttrGroupWithAttrByCatelogId(Long catelogId);
 }
 

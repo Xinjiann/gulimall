@@ -1,15 +1,15 @@
-package com.xinjian.gulimall.product.dao;
+package com.firenay.mall.product.dao;
 
-import com.xinjian.gulimall.product.entity.CategoryEntity;
+import com.firenay.mall.product.entity.CategoryEntity;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
  * 商品三级分类
  * 
- * @author xinjianli
- * @email 963597661@qq.com
- * @date 2020-12-24 15:01:43
+ * @author firenay
+ * @email 1046762075@qq.com
+ * @date 2020-05-31 17:06:04
  */
 @Mapper
 public interface CategoryDao extends BaseMapper<CategoryEntity> {

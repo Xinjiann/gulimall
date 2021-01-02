@@ -1,18 +1,17 @@
-package com.xinjian.gulimall.product.entity;
+package com.firenay.mall.product.entity;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
 
 import java.io.Serializable;
-import java.util.Date;
-import lombok.Data;
 
 /**
  * 商品属性
  * 
- * @author xinjianli
- * @email 963597661@qq.com
- * @date 2020-12-24 15:01:46
+ * @author firenay
+ * @email 1046762075@qq.com
+ * @date 2020-05-31 17:06:04
  */
 @Data
 @TableName("pms_attr")
@@ -56,5 +55,4 @@ public class AttrEntity implements Serializable {
 	 * 快速展示【是否展示在介绍上；0-否 1-是】，在sku中仍然可以调整
 	 */
 	private Integer showDesc;
-
 }

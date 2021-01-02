@@ -1,9 +1,9 @@
-package com.xinjian.gulimall.product.controller;
+package com.firenay.mall.product.controller;
 
-import java.util.Arrays;
-import java.util.Map;
-
-//import org.apache.shiro.authz.annotation.RequiresPermissions;
+import com.firenay.common.utils.PageUtils;
+import com.firenay.common.utils.R;
+import com.firenay.mall.product.entity.SkuInfoEntity;
+import com.firenay.mall.product.service.SkuInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -11,43 +11,38 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.xinjian.gulimall.product.entity.SkuInfoEntity;
-import com.xinjian.gulimall.product.service.SkuInfoService;
-import com.xinjian.common.utils.PageUtils;
-import com.xinjian.common.utils.R;
-
-
+import java.util.Arrays;
+import java.util.Map;
 
 /**
  * sku信息
  *
- * @author xinjianli
- * @email 963597661@qq.com
- * @date 2020-12-24 16:09:56
+ * @author firenay
+ * @email 1046762075@qq.com
+ * @date 2020-05-31 17:06:04
  */
 @RestController
 @RequestMapping("product/skuinfo")
 public class SkuInfoController {
+
     @Autowired
     private SkuInfoService skuInfoService;
 
     /**
-     * 列表
+     * SKU查询
      */
     @RequestMapping("/list")
-    //@RequiresPermissions("product:skuinfo:list")
     public R list(@RequestParam Map<String, Object> params){
-        PageUtils page = skuInfoService.queryPage(params);
+        PageUtils page = skuInfoService.queryPageByCondition(params);
 
         return R.ok().put("page", page);
     }
 
-
     /**
      * 信息
+	 * 		库存保存的时候会远程调用这个接口
      */
     @RequestMapping("/info/{skuId}")
-    //@RequiresPermissions("product:skuinfo:info")
     public R info(@PathVariable("skuId") Long skuId){
 		SkuInfoEntity skuInfo = skuInfoService.getById(skuId);
 
@@ -58,7 +53,6 @@ public class SkuInfoController {
      * 保存
      */
     @RequestMapping("/save")
-    //@RequiresPermissions("product:skuinfo:save")
     public R save(@RequestBody SkuInfoEntity skuInfo){
 		skuInfoService.save(skuInfo);
 
@@ -69,7 +63,6 @@ public class SkuInfoController {
      * 修改
      */
     @RequestMapping("/update")
-    //@RequiresPermissions("product:skuinfo:update")
     public R update(@RequestBody SkuInfoEntity skuInfo){
 		skuInfoService.updateById(skuInfo);
 
@@ -80,7 +73,7 @@ public class SkuInfoController {
      * 删除
      */
     @RequestMapping("/delete")
-    //@RequiresPermissions("product:skuinfo:delete")
+    //@RequiresPermissions("${moduleNamez}:skuinfo:delete")
     public R delete(@RequestBody Long[] skuIds){
 		skuInfoService.removeByIds(Arrays.asList(skuIds));
 

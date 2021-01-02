@@ -1,4 +1,4 @@
-package com.xinjian.gulimall.product.entity;
+package com.firenay.mall.product.entity;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
@@ -10,9 +10,9 @@ import lombok.Data;
 /**
  * sku销售属性&值
  * 
- * @author xinjianli
- * @email 963597661@qq.com
- * @date 2020-12-24 15:01:40
+ * @author firenay
+ * @email 1046762075@qq.com
+ * @date 2020-05-31 17:06:04
  */
 @Data
 @TableName("pms_sku_sale_attr_value")

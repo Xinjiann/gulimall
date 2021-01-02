@@ -1,18 +1,18 @@
-package com.xinjian.gulimall.product.entity;
+package com.firenay.mall.product.entity;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
 
 import java.io.Serializable;
-import java.util.Date;
-import lombok.Data;
 
 /**
  * 属性分组
  * 
- * @author xinjianli
- * @email 963597661@qq.com
- * @date 2020-12-24 15:01:44
+ * @author firenay
+ * @email 1046762075@qq.com
+ * @date 2020-05-31 17:06:04
  */
 @Data
 @TableName("pms_attr_group")
@@ -45,4 +45,9 @@ public class AttrGroupEntity implements Serializable {
 	 */
 	private Long catelogId;
 
+	/**
+	 * 三级分类修改的时候回显路径
+	 */
+	@TableField(exist = false)
+	private Long[] catelogPath;
 }

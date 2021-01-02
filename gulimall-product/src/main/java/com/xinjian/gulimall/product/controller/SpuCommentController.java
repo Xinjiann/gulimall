@@ -1,9 +1,8 @@
-package com.xinjian.gulimall.product.controller;
+package com.firenay.mall.product.controller;
 
 import java.util.Arrays;
 import java.util.Map;
 
-//import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -11,19 +10,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.xinjian.gulimall.product.entity.SpuCommentEntity;
-import com.xinjian.gulimall.product.service.SpuCommentService;
-import com.xinjian.common.utils.PageUtils;
-import com.xinjian.common.utils.R;
+import com.firenay.mall.product.entity.SpuCommentEntity;
+import com.firenay.mall.product.service.SpuCommentService;
+import com.firenay.common.utils.PageUtils;
+import com.firenay.common.utils.R;
 
 
 
 /**
  * 商品评价
  *
- * @author xinjianli
- * @email 963597661@qq.com
- * @date 2020-12-24 16:09:54
+ * @author firenay
+ * @email 1046762075@qq.com
+ * @date 2020-05-31 17:06:04
  */
 @RestController
 @RequestMapping("product/spucomment")
@@ -80,7 +79,7 @@ public class SpuCommentController {
      * 删除
      */
     @RequestMapping("/delete")
-    //@RequiresPermissions("product:spucomment:delete")
+    //@RequiresPermissions("${moduleNamez}:spucomment:delete")
     public R delete(@RequestBody Long[] ids){
 		spuCommentService.removeByIds(Arrays.asList(ids));
 
