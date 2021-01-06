@@ -1,5 +1,7 @@
 # gulimall
 
+## 1. project structure and plan 
+
 Gulimall is a self-operated mall platform, which consists of a cluster system + backend management system.
 
 This project covers the full-stack technology of distributed development, including front-and-back full-stack development, Restful interface, data verification, gateway, registration discovery, configuration center, fuse, current limit, downgrade,
@@ -20,6 +22,38 @@ Stress test tuning, Redisson distributed lock, distributed semaphore.
 ### High-availability cluster deployment part
 
 Develop a full set of pipeline based on kubesphere and k8s. To be continued...
+
+
+## 2. Project record and notes
+
+### 2.1. Cloud server related deployment
+
+Here I chose the Google cloud server with CentOS 7 where docker (mysql, redis) and nacos are runing on, its free for the first 3 monthes, and could save your laptop :)
+
+To know more about installing docker with mysql and redis, please find it in my other blog. [Installing docker on google cloud server](https://github.com/Xinjiann/java/blob/main/Deploy%20docker%20with%20mysql%20and%20redis%20on%20google%20cloud%20server.md), and problems solving when deploy the nacos on cloud server. [Runing nacos as configuration and registration centeron google cloud server](https://github.com/Xinjiann/java/blob/main/Runing%20nacos%20as%20configuration%20and%20registration%20centeron%20google%20cloud%20server.md)
+
+### 2.2. Code generater
+
+[Renren Generator](https://gitee.com/renrenio/renren-generator): A open source code generator can generate entity, xml, dao, service, vue, sql code online, reducing development tasks by more than 70%.
+
+[Renren Fast](https://gitee.com/renrenio/renren-fast): A lightweight Spring Boot 2.1 rapid development platform, including: administrator list, role management, menu management, timed tasks, parameter management, code generator, log management, cloud storage, API module (APP interface development tool), front and back end separation, etc.
+
+[Renren Fast Vue](https://gitee.com/renrenio/renren-fast-vue): The front-end system of renren-fast background management.
+
+
+
+### 2.3. Gateway and CORS
+
+The gateway provides protocol adaptation, protocol forwarding, security policies, anti-brushing, traffic, monitoring logs functions.
+
+More problems solving of gateway and CORS in my blog: [xinjian.blog/gateway](http://xinjian.blog/2020/11/28/Spring-Cloud-Gateway-Service-Startup-Error/) and  [xinjian.blog/CORS](http://xinjian.blog/2020/12/30/Cross-Origin-Resource-Sharing-CORS-problem-solving-and-ideas/)
+
+### 2.4. JSR303 custom annotation
+
+JSR303 is a sub-specification in Java EE 6, called Bean Validation. We can mark different annotations on the fields of entity classes to verify data without if-else.
+
+[xinjian.blog/JSR303]()
+
 
 
 
