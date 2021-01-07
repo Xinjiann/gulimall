@@ -54,6 +54,17 @@ JSR303 is a sub-specification in Java EE 6, called Bean Validation. We can mark 
 
 [xinjian.blog/JSR303]()
 
+### 2.5. File upload
+
+Different from the traditional single application, here we choose to upload the data to the distributed file server, Alibaba OSS(Object Storage Service).
+
+[xinjian.blog/fileUpload]()
+
+The principle of direct transmission after signing on the server:
+
+- The user sends a policy upload request to the application server.
+- The application server returns the upload policy and signature to the user.
+- Users directly upload data to OSS.
 
 
 
