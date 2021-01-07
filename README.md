@@ -30,7 +30,7 @@ Develop a full set of pipeline based on kubesphere and k8s. To be continued...
 
 Here I chose the Google cloud server with CentOS 7 where docker (mysql, redis) and nacos are runing on, its free for the first 3 monthes, and could save your laptop :)
 
-To know more about installing docker with mysql and redis, please find it in my other blog. [Installing docker on google cloud server](https://github.com/Xinjiann/java/blob/main/Deploy%20docker%20with%20mysql%20and%20redis%20on%20google%20cloud%20server.md), and problems solving when deploy the nacos on cloud server. [Runing nacos as configuration and registration centeron google cloud server](https://github.com/Xinjiann/java/blob/main/Runing%20nacos%20as%20configuration%20and%20registration%20centeron%20google%20cloud%20server.md)
+To know more about installing docker with mysql and redis, please find it in my other blog. [Installing docker on google cloud server](https://github.com/Xinjiann/java/blob/main/Deploy%20docker%20with%20mysql%20and%20redis%20on%20google%20cloud%20server.md), and problems solving when deploy the nacos on cloud server. [Runing nacos as configuration and registration centeron google cloud server](https://github.com/Xinjiann/java/blob/main/Runing%20nacos%20as%20configuration%20and%20registration%20center%20on%20google%20cloud%20server.md)
 
 ### 2.2. Code generater
 
