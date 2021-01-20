@@ -4,8 +4,12 @@
 
 Gulimall is a self-operated mall platform, which consists of a cluster system + backend management system.
 
-This project covers the full-stack technology of distributed development, including front-and-back full-stack development, Restful interface, data verification, gateway, registration discovery, configuration center, fuse, current limit, downgrade,
-Link tracking, performance monitoring, stress testing, system warning, cluster deployment, continuous integration, continuous deployment.
+* Developed a distributed e-commerce system based on **Spring Boot** and **Spring Cloud**, used **Docker** to manage multiple middleware and **Nginx** for dynamic and static separation of resources, reverse proxy, and load balancing.
+* Introduced a complete set of **microservice** governance solutions: **Nacos** as a registration and configuration center, **Gateway** as a gateway, **Feign** for remote call, **Ribbon** for load balancing, **Sentinel** for flow protection, **Sleuth** and **Zipkin** as a tracing system.
+* Solved most of the problems faced by a highly concurrent distributed system: **Spring Cache** and **Redis** as distributed cache, **Elasticsearch** for faster product retrieval time, **Spring Session** for session data sharing, **thread pool** and **asynchronous task** for stability and performance.
+* Implemented generating/cancelling order and locking/unlocking inventory using **RabbitMQ delayed queue** based on **BASE** theory and **Flexible Transaction** - **message reliability** and **eventual consistency** of transactions in a distributed system.
+* Completed product flash sale using **Redisson distributed lock – Semaphore** and **MQ**, which can process **50,000 QPS** in one Tomcat server.
+
 
 This project will be devided into 3 parts, basic distributed part, advanced distributed part, and high-availability cluster deployment part, details are shown below, updates are continuous.
 
