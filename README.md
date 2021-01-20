@@ -1,15 +1,11 @@
-# gulimall
+# E-commerce App with Distributed Architecture
 
 ## 1. project structure and plan 
 
-Gulimall is a self-operated mall platform, which consists of a cluster system + backend management system.
+XJ-mall is a self-operated mall platform, which consists of a cluster system + backend management system.
 
-* Developed a distributed e-commerce system based on **Spring Boot** and **Spring Cloud**, used **Docker** to manage multiple middleware and **Nginx** for dynamic and static separation of resources, reverse proxy, and load balancing.
-* Introduced a complete set of **microservice** governance solutions: **Nacos** as a registration and configuration center, **Gateway** as a gateway, **Feign** for remote call, **Ribbon** for load balancing, **Sentinel** for flow protection, **Sleuth** and **Zipkin** as a tracing system.
-* Solved most of the problems faced by a highly concurrent distributed system: **Spring Cache** and **Redis** as distributed cache, **Elasticsearch** for faster product retrieval time, **Spring Session** for session data sharing, **thread pool** and **asynchronous task** for stability and performance.
-* Implemented generating/cancelling order and locking/unlocking inventory using **RabbitMQ delayed queue** based on **BASE** theory and **Flexible Transaction** - **message reliability** and **eventual consistency** of transactions in a distributed system.
-* Completed product flash sale using **Redisson distributed lock – Semaphore** and **MQ**, which can process **50,000 QPS** in one Tomcat server.
-
+This project covers the full-stack technology of distributed development, including front-and-back full-stack development, Restful interface, data verification, gateway, registration discovery, configuration center, fuse, current limit, downgrade,
+Link tracking, performance monitoring, stress testing, system warning, cluster deployment, continuous integration, continuous deployment.
 
 This project will be devided into 3 parts, basic distributed part, advanced distributed part, and high-availability cluster deployment part, details are shown below, updates are continuous.
 
@@ -34,7 +30,7 @@ Develop a full set of pipeline based on kubesphere and k8s. To be continued...
 
 Here I chose the Google cloud server with CentOS 7 where docker (mysql, redis) and nacos are runing on, its free for the first 3 monthes, and could save your laptop :)
 
-To know more about installing docker with mysql and redis, please find it in my other blog. [Installing docker on google cloud server](https://github.com/Xinjiann/java/blob/main/Deploy%20docker%20with%20mysql%20and%20redis%20on%20google%20cloud%20server.md), and problems solving when deploy the nacos on cloud server. [Runing nacos as configuration and registration centeron google cloud server](https://github.com/Xinjiann/java/blob/main/Runing%20nacos%20as%20configuration%20and%20registration%20center%20on%20google%20cloud%20server.md)
+Find more about installing docker with mysql and redis at [Installing docker on google cloud server](http://xinjian.blog/2021/01/20/Deploy-docker-with-mysql-and-redis-on-google-cloud-server/), and problems solving when deploy the nacos on cloud server at [Runing nacos as configuration and registration centeron google cloud server](http://xinjian.blog/2021/01/20/Runing-nacos-as-configuration-and-registration-center-on-google-cloud-server/)
 
 ### 2.2. Code generater
 
@@ -50,19 +46,19 @@ To know more about installing docker with mysql and redis, please find it in my 
 
 The gateway provides protocol adaptation, protocol forwarding, security policies, anti-brushing, traffic, monitoring logs functions.
 
-More problems solving of gateway and CORS in my blog: [xinjian.blog/gateway](http://xinjian.blog/2020/11/28/Spring-Cloud-Gateway-Service-Startup-Error/) and  [xinjian.blog/CORS](http://xinjian.blog/2020/12/30/Cross-Origin-Resource-Sharing-CORS-problem-solving-and-ideas/)
+More problems solving of gateway and CORS in [xinjian.blog/gateway](http://xinjian.blog/2020/11/28/Spring-Cloud-Gateway-Service-Startup-Error/) and  [xinjian.blog/CORS](http://xinjian.blog/2020/12/30/Cross-Origin-Resource-Sharing-CORS-problem-solving-and-ideas/)
 
 ### 2.4. JSR303 custom annotation
 
 JSR303 is a sub-specification in Java EE 6, called Bean Validation. We can mark different annotations on the fields of entity classes to verify data without if-else.
 
-[xinjian.blog/JSR303]()
+Find more at [xinjian.blog/JSR303](http://xinjian.blog/2021/01/20/JSR-303-custom-annotation/)
 
 ### 2.5. File upload
 
 Different from the traditional single application, here we choose to upload the data to the distributed file server, Alibaba OSS(Object Storage Service).
 
-[xinjian.blog/fileUpload]()
+Find more at [xinjian.blog/fileUpload](http://xinjian.blog/2021/01/01/File%20upload%20ideas%20for%20distributed%20systems/)
 
 The principle of direct transmission after signing on the server:
 
